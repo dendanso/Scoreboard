@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Arvo", serif;
+}
+
+section{
+        width: 100%;
+        height: 100vh;
+}
+.black_side{
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    color: white;
+    background-color: black;
+    position: relative;
+    
+}
+.white_side{
+    
+    text-align: center;
+    width: 100%;
+    height: 50%;  
+
+}
+
+h1{
+    padding-top: 50px;
+    margin: 0%;
+    font-size: 45px;
+    width: fit-content;
+    margin: auto;
+}
+
+
+/* Code syntax for settings icon*/
+
+.settings{
+    position: absolute;
+    right:20px;
+    top: 25px;
+}
+
+/*Flexbox codes begin here*/
+
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whitescore,.whitefoul{
+    width: 30%;
+   /* border: red solid 1px; */
+}
+
+h2{
+    margin: 0;
+}
+
+.score{
+    font-size: clamp(.5rem,50vw,65rem);
+    height: fit-content;
+}
+
+.fouls{
+    font-size: 6rem;
+}
+
+
