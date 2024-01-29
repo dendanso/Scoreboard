@@ -17,6 +17,9 @@ section{
     color: white;
     background-color: black;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     
 }
 .white_side{
@@ -28,11 +31,11 @@ section{
 }
 
 h1{
-    padding-top: 50px;
+    /* padding-top: 50px; */
     margin: 0%;
     font-size: 45px;
     width: fit-content;
-    margin: auto;
+    margin:0 auto;
 }
 
 
@@ -50,15 +53,17 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: max-content;
 }
 
 .whitescore,.whitefoul{
-    width: 30%;
+    width: 35%;
    /* border: red solid 1px; */
 }
 
 h2{
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .score{
