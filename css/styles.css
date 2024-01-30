@@ -19,11 +19,13 @@ section{
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     
 }
 .white_side{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     width: 100%;
     height: 50%;  
@@ -53,7 +55,8 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: max-content;
+    margin-top: 20px;
+    
 }
 
 .whitescore,.whitefoul{
@@ -69,10 +72,27 @@ h2{
 .score{
     font-size: clamp(.5rem,50vw,65rem);
     height: fit-content;
+    line-height: .9;
 }
 
 .fouls{
     font-size: 6rem;
 }
-
+.flexboxer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.blackscore,.blackfoul{
+    width: 35%;
+}
+.bscore{
+     font-size: clamp(.5rem,50vw,65rem);
+     height: fit-content;
+     line-height: .9;
+}
+.bfouls{
+    font-size: 6rem;
+}
 
