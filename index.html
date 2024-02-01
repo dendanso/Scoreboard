@@ -16,9 +16,9 @@
         <div class="flexbox">
             <div class="whitescore">
             
-                <img src="images/Polygon -1@2x.png">
+                <img src="images/Polygon -1@2x.png" class="white_arrow_up" onclick="scoreUp()">
                 <h2 class="score">0</h2>
-                <img src="images/Polygon -2@2x.png" >
+                <img src="images/Polygon -2@2x.png" class="white_arrow_down" onclick="scoreDown()">
             </div>
             <div class="whitefoul">
                 <h2>Fouls</h2>
@@ -48,9 +48,26 @@
         </div>
     </div>
     
+    <!-- Timer codes start here -->
+    <div class="timer_parent">
+        <div class="timer_child">
+            <div class="pause_button">
+                <img src="./images/pause.png" alt="pause pause_button">
+            </div>
+        <div class="timer">
+            <h1>00:00</h1>
+        </div>
+        <div class="reset_button">
+            <img src="./images/reset.png" alt="">
+        </div>
+        </div>
+        
+    </div>
 
   </section>
   </div>
    
+  <script src="./js/index.js"></script>
+
 </body>
 </html>
