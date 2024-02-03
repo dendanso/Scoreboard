@@ -16,9 +16,9 @@
         <div class="flexbox">
             <div class="whitescore">
             
-                <img src="images/Polygon -1@2x.png">
+                <img src="images/Polygon -1@2x.png" class="whitescoreUp" onclick="scoreUp()">
                 <h2 class="score">0</h2>
-                <img src="images/Polygon -2@2x.png" >
+                <img src="images/Polygon -2@2x.png" class="whitescoreDown" onclick="scoreDown()">
             </div>
             <div class="whitefoul">
                 <h2>Fouls</h2>
@@ -47,10 +47,28 @@
         </div>
         </div>
     </div>
-    
+    <div class="timer_parent">
+        <div class="timer_child">
+            <div class="pause">
+                <img src="./images/pause.png" alt="pause.png">
+            </div>
+            
+            <div class="timer">
+                <h1>00:00</h1>
+              
+            </div>
+
+            <div class="reset">
+                <img src="./images/reset.png" alt="reset.png">
+              </div> 
+
+        </div>
+    </div>
 
   </section>
   </div>
+
+  <script src="./indes.js"></script>
    
 </body>
 </html>
