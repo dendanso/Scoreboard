@@ -12,7 +12,7 @@
     <div class="black_side">
         <img src="images/setting@2x.png" class="settings">
         
-        <h1 contenteditable>Team A</h1>
+        <h1 contenteditable class="first_team">Team A <img src="./images/check-mark.png" alt="icon" class="accept_icon"></h1>
         <div class="flexbox">
             <div class="whitescore">
             
@@ -22,9 +22,9 @@
             </div>
             <div class="whitefoul">
                 <h2>Fouls</h2>
-                <img src="images/Polygon -1@2x.png" alt="">
+                <img src="images/Polygon -1@2x.png" alt="" class="whiteFoulsUp" onclick="whiteFoulsUp()">
                 <h2 class="fouls">0</h2>
-                <img src="images/Polygon -2@2x.png">
+                <img src="images/Polygon -2@2x.png" class="whiteFoulsDown" onclick="whiteFoulsDown()">
                 
                 
             </div>
@@ -32,7 +32,7 @@
     </div>
     
     <div class="white_side">
-        <h1 contenteditable="true">Team B</h1>
+        <h1 contenteditable="true" class="second_team">Team B</h1>
         <div class="flexboxer">
         <div class="blackscore">
             <img src="images/Polygon 1@2x.png" alt="">

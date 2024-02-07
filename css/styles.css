@@ -130,3 +130,12 @@ h2{
 }
 
 /* Styling for timer ends here */
+.fouls{
+    pointer-events: none;
+}
+
+.first_team img{
+    width: 12%;
+    margin-left: 20px;
+    display: none;
+}
