@@ -1,7 +1,9 @@
 var score_container = document.querySelector('.score')
 var score = 0
-var first_team_img = document.querySelector(".accept_icon")
+var accept_icon = document.querySelector(".accept_icon")
 var first_team = document.querySelector('.first_team')
+var key = "teamA"
+
 
 //this is how you write a function
 function scoreUp(){
@@ -29,11 +31,13 @@ var no_fouls = 0;
 
 function whiteFoulsUp() {
    
-    if(no_fouls<5){
+    if(no_fouls<6){
         no_fouls++;
         foul.innerHTML =no_fouls
-    }else{
-        foul.innerHTML="5+"
+
+        if(no_fouls == 6){
+            foul.innerHTML="5+"
+        }
     }
 
  
@@ -51,21 +55,31 @@ function whiteFoulsDown() {
 }
 
 function renameFirstTeam(){
-    first_team_img.style.display = "inline-block"
+    accept_icon.style.display="block"
 }
 
 function acceptRename(){
+    accept_icon.style.display="none"
+    var teamA = first_team.textContent
+    sessionStorage.setItem(key,teamA)
+
     
-    first_team_img.style.display ="none"
 
 }
 
 
-
 first_team.addEventListener('click',renameFirstTeam)
-first_team_img.addEventListener('click',acceptRename)
+accept_icon.addEventListener('click',acceptRename)
+
+var team_name = sessionStorage.getItem(key)
 
 
+if(team_name != null){
+   first_team.textContent = team_name
+}
+
+
+console.log(first_team.textContent)
 
 
 
