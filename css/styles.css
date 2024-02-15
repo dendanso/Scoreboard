@@ -38,7 +38,7 @@ h1{
     margin: 0%;
     font-size: 30px;
     width: fit-content;
-    margin:0 auto;
+    
 }
 
 
@@ -80,6 +80,7 @@ h2{
 .fouls{
     font-size: 6rem;
     line-height: .90;
+    pointer-events: none;
 }
 .flexboxer{
     display: flex;
@@ -94,10 +95,12 @@ h2{
      font-size: clamp(.5rem,50vw,65rem);
      height: fit-content;
      line-height: .9;
+     pointer-events: none;
 }
 .bfouls{
     font-size: 6rem;
     line-height: .90;
+    pointer-events: none;
 }
 .timer_parent{
     position:absolute;
@@ -116,5 +119,54 @@ h2{
     justify-content: space-evenly;
     align-items: center;
 
+}
+
+.teamwork{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.done_container{
+    width: 7.555%;
+}
+
+.done_icon{
+    width:100% ;
+    margin-left: 20px ;
+    display: none;
+
+}
+
+.newteamwork{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doneblack_container{
+    width: 7.5%;
+}
+
+.doneblack_icon{
+    width:100% ;
+    margin-left: 20px ;
+    display: none;
+
+}
+
+.refresh{
+    position: absolute;
+    left:20px;
+    top: 25px;
+    width: 8%;
+}
+
+.play{
+    width: 7%;
+}
+
+.playbutton{
+    width: 100%;
 }
 
