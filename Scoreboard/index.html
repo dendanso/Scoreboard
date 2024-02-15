@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Score App</title>
+</head>
+<body>
+  <section>
+    <div class="black_side">
+        
+        <img src="/images/refresh-arrow.png" alt="refresh" class="refresh">
+        
+        <img src="images/setting@2x.png" class="settings">
+        <div class="teamwork">
+        <h1 contenteditable class="firstteam">Team A</h1>
+        <div class="done_container">
+        <img src="/images/check-mark.png" alt="done" class="done_icon">
+        </div>
+        </div>
+        <div class="flexbox">
+            <div class="whitescore">
+            
+                <img src="images/Polygon -1@2x.png" class="whitescoreUp" onclick="scoreUp()">
+                <h2 class="score">0</h2>
+                <img src="images/Polygon -2@2x.png" class="whitescoreDown" onclick="scoreDown()">
+            </div>
+            <div class="whitefoul">
+                <h2>Fouls</h2>
+                <img src="images/Polygon -1@2x.png" alt=""  class="foulsup" onclick="foulsup()">
+                <h2 class="fouls">0</h2>
+                <img src="images/Polygon -2@2x.png" class="foulsdown" onclick="foulsdown()">
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="white_side">
+        <div class="newteamwork">
+        <h1 contenteditable class="secondteam">Team B</h1>
+        <div class="doneblack_container">
+            <img src="/images/chekboxblack.png" alt="doneblack" class="doneblack_icon">
+        </div>
+        </div>
+        <div class="flexboxer">
+        <div class="blackscore">
+            <img src="images/Polygon 1@2x.png" alt="" class="bscoreup" onclick="bscoreup()">
+            <h2 class="bscore">0</h2>
+            <img src="images/Polygon 2@2x.png" class="bscoredown" onclick="bscoredown()">
+        </div>
+        <div class="blackfoul">
+            <h2>Fouls</h2>
+            <img src="images/Polygon 1@2x.png" class="bfoulup" onclick="bfoulup()">
+            <h2 class="bfouls">0</h2>
+            <img src="images/Polygon 2@2x.png" class="bfouldown" onclick="bfouldown()">
+        </div>
+        </div>
+    </div>
+    <div class="timer_parent">
+        <div class="timer_child">
+            <div class="pause">
+                <img src="./images/pause.png" alt="pause.png">
+            </div>
+            
+            <div class="timer">
+                <h1>00:00</h1>
+              
+            </div>
+
+            <div class="reset">
+                <img src="./images/reset.png" alt="reset.png">
+              </div> 
+
+        </div>
+    </div>
+
+  </section>
+  </div>
+
+  <script src="./indes.js"></script>
+   
+</body>
+</html>
