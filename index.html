@@ -5,43 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="apple-touch-icon" href="./images/icons/keepscore_x96.png">
     <title>Score App</title>
 </head>
 <body>
   <section>
     <div class="black_side">
         <img src="images/setting@2x.png" class="settings">
-        <div class="team_names">
+        <!-- <div class="team_names">
             <h1 contenteditable class="first_team">Team A</h1>
             <div class="accept_icon_container">
                 <img src="./images/check-mark.png" alt="accept icon" class="accept_icon">
             </div>
             
-        </div>
+        </div> -->
         
-
-        <div class="flexbox">
-            <div class="whitescore">
-            
-                <img src="images/Polygon -1@2x.png" class="white_arrow_up" onclick="scoreUp()">
-                <h2 class="score">0</h2>
-                <img src="images/Polygon -2@2x.png" class="white_arrow_down" onclick="scoreDown()">
+        <div class="score_foul_container">
+             <div class="team_names">
+            <h1 contenteditable class="first_team">Home</h1>
+            <div class="accept_icon_container">
+                <img src="./images/check-mark.png" alt="accept icon" class="accept_icon">
             </div>
-            <div class="whitefoul">
-                <h2>Fouls</h2>
-                <img src="images/Polygon -1@2x.png" alt="" class="whiteFoulsUp" onclick="whiteFoulsUp()">
-                <h2 class="fouls">0</h2>
-                <img src="images/Polygon -2@2x.png" class="whiteFoulsDown" onclick="whiteFoulsDown()">
+            
+            </div>
+
+            <div class="flexbox">
+                <div class="whitescore">
                 
-                
-                
+                    <img src="images/Polygon -1@2x.png" class="white_arrow_up" onclick="scoreUp()">
+                    <h2 class="score">0</h2>
+                    <img src="images/Polygon -2@2x.png" class="white_arrow_down" onclick="scoreDown()">
+                </div>
+                <div class="whitefoul">
+                    <h2>Fouls</h2>
+                    <img src="images/Polygon -1@2x.png" alt="" class="whiteFoulsUp" onclick="whiteFoulsUp()">
+                    <h2 class="fouls">0</h2>
+                    <img src="images/Polygon -2@2x.png" class="whiteFoulsDown" onclick="whiteFoulsDown()">
+                    
+                    
+                    
+                </div>
             </div>
         </div>
+       
     </div>
     
     <div class="white_side">
-        <h1 contenteditable="true" class="second_team">Team B</h1>
-        <div class="flexboxer">
+        <div class="team_names">
+            <h1 contenteditable class="second_team">Visitors</h1>
+            <div class="accept_icon_container">
+                <img src="./images/check-mark-black.png" alt="accept icon" class="accept_icon_black">
+            </div>
+            
+        </div>
+        <div class="flexbox">
         <div class="blackscore">
             <img src="images/Polygon 1@2x.png" alt="">
             <h2 class="bscore">0</h2>
@@ -59,11 +77,11 @@
     <!-- Timer codes start here -->
     <div class="timer_parent">
         <div class="timer_child">
-            <div class="pause_button">
-                <img src="./images/pause.png" alt="pause pause_button">
+            <div class="pause_play_button">
+                <img src="./images/play.png" alt="pause_button">
             </div>
         <div class="timer">
-            <h1>00:00</h1>
+            <h1><span class="min" onkeypress="return (this.innerText.length <= 1)" contenteditable="true" inputmode="decimal">00</span> : <span class="sec" contenteditable="true" inputmode="decimal">00</span> </h1>
         </div>
         <div class="reset_button">
             <img src="./images/reset.png" alt="">
@@ -74,8 +92,9 @@
 
   </section>
   </div>
-   
+  <script src="./js/gsap.js"></script>
   <script src="./js/index.js"></script>
+  <script src="./js/timer.js"></script>
 
 </body>
 </html>

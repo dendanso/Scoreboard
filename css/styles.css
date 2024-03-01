@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@font-face {
+    font-family: collegeSlab;
+    src: url(../fonts/CollegeSlabSC.otf);
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -18,14 +23,14 @@ section{
 .black_side{
     text-align: center;
     width: 100%;
-    height: 50%;
+    height: 53%;
     color: white;
     background-color: black;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
 }
 .white_side{
     display: flex;
@@ -33,7 +38,7 @@ section{
     justify-content: center;
     text-align: center;
     width: 100%;
-    height: 50%;  
+    height: 47%;  
 
 }
 
@@ -60,14 +65,14 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 40px;
     
 }
 
 .whitescore,.whitefoul{
     /* width: 35%;
    border: red solid 1px; */
-   margin: 0 20px;
+   margin: 0 10px;
 }
 
 h2{
@@ -76,10 +81,11 @@ h2{
 }
 
 .score{
-    font-size: clamp(.5rem,50vw,65rem);
+    font-size: clamp(.5rem,60vw,58rem);
     height: fit-content;
     line-height: .9;
     pointer-events: none;
+    /* font-family: collegeSlab; */
 }
 
 .fouls{
@@ -93,7 +99,7 @@ h2{
     margin-top: 20px;
 }
 .blackscore,.blackfoul{
-    width: 35%;
+    margin: 0px 10px;
 }
 .bscore{
      font-size: clamp(.5rem,50vw,65rem);
@@ -116,7 +122,7 @@ h2{
     width: 225px;
     padding: 15px;
     border-radius: 15px;
-    filter: drop-shadow(0px 9px 100px rgb(135, 135, 135));
+    filter: drop-shadow(0px 9px 100px rgb(111, 111, 111));
     
 }
 
@@ -137,18 +143,45 @@ h2{
 
 /* Team names styling */
 
+/* .team_names{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.accept_icon_container img{
+    width: 45%;
+}
+
+.accept_icon,.accept_icon_black{
+    width: 100%;
+    margin-left: 20px;
+    display: none;
+}
+
+.pause_play_button,.reset_button{
+    width: 13%;
+    margin: 10px;
+}
+
+.pause_play_button img,.reset_button img{
+    width: 100%;
+}
+
 .team_names{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.accept_icon_container{
-    width: 5%;
+.score_foul_container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.accept_icon{
-    width: 100%;
-    margin-left: 20px;
+.white_arrow_up,.white_arrow_down{
     display: none;
 }
