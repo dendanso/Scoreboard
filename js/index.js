@@ -189,6 +189,17 @@ blackSide.addEventListener('touchend', function(e){
 })
 
 
+//Register service worker...
+
+if('serviceWorker' in navigator){
+    window.addEventListener('load', function(){
+        navigator.serviceWorker.register('/sw.js').then(function(){
+            console.log("service worker registerd")
+        })
+    })
+}
+
+
 
 
 
